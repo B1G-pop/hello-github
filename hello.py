@@ -3,6 +3,7 @@
 运行方式：
     python hello.py
     python hello.py 你的名字
+    python hello.py 小明 小红 小刚
 """
 
 import sys
@@ -15,8 +16,10 @@ def greet(name: str = "世界") -> str:
 
 
 def main() -> None:
-    name = sys.argv[1] if len(sys.argv) > 1 else "世界"
-    print(greet(name))
+    # 支持一次传多个名字：python hello.py 小明 小红
+    names = sys.argv[1:] or ["世界"]
+    for name in names:
+        print(greet(name))
     print(f"现在是 {datetime.now():%Y-%m-%d %H:%M:%S}")
 
 
