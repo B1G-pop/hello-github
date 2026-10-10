@@ -1,0 +1,24 @@
+# 这是 .gitignore —— 告诉 Git "这些文件不要管"
+# 井号开头的是注释，写给自己看的
+
+# Python 运行时自动生成的缓存目录
+__pycache__/
+*.py[cod]
+
+# 虚拟环境（每个项目独立的依赖目录，不需要上传）
+.venv/
+venv/
+env/
+
+# 编辑器生成的本地配置
+.vscode/
+.idea/
+
+# 操作系统生成的文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 存放密码、密钥之类的文件（永远不要上传！）
+*.key
+.env
