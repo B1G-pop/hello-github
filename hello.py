@@ -12,7 +12,7 @@ from datetime import datetime
 
 def greet(name: str = "世界") -> str:
     """返回一句问候语。"""
-    return f"你好，{name}！"
+    return f"哈喽，{name}！我是 B1G-pop，这是我的第一个 Git 项目 🎉"
 
 
 def main() -> None:
